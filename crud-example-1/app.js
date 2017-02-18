@@ -1,7 +1,7 @@
 var config = require('./config')
 var hapi = require('hapi')
 
-// process.env.NODE_ENV = 'pro'; optional use to startpro
+// process.env.NODE_ENV = 'pro'; optional use or npm startpro
 
 var server = new hapi.Server()
 server.connection({ 

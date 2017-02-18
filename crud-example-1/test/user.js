@@ -39,7 +39,7 @@ lab.experiment('Test for RESTFUL user services', function() {
       url: '/users',
       payload: {
         names: 'Stivenson',
-        surnames: 'Rincon'
+        surnames: 'Rincon',
         number_identification: '123456' 
       }
     }
