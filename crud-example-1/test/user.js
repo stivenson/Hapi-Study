@@ -52,4 +52,39 @@ lab.experiment('Test for RESTFUL user services', function() {
     })
   })
 
+
+  lab.test('PUT users', function(done) {
+    let options = {
+      method: 'PUT',
+      url: '/users/1',
+      payload: {
+        names: 'Stivenson',
+        surnames: 'Rincon',
+        number_identification: '123456' 
+      }
+    }
+    server.inject(options, function(response) {
+      let result = response.result
+      code.expect(response.statusCode).to.equal(200)
+      code.expect(result.statusCode).to.equal(0)
+      //code.expect(result.mensaje).to.equal("")
+      done()
+    })
+  })
+
+
+  lab.test('DELETE users', function(done) {
+    let options = {
+      method: 'DELETE',
+      url: '/users/1'
+    }
+    server.inject(options, function(response) {
+      let result = response.result
+      code.expect(response.statusCode).to.equal(200)
+      code.expect(result.statusCode).to.equal(0)
+      //code.expect(result.mensaje).to.equal("")
+      done()
+    })
+  })
+
 })
