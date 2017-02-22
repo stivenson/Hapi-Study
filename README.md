@@ -8,6 +8,7 @@ Exercises for personal study of Nodejs, frameworks and related topics
  3. crud-example-2 -> Hapi.js and JWT
  
 ## More info
- [Hapi.js](https://hapijs.com/)
- [JWT(Json Web Tokens)](https://jwt.io/)
+ 1. [Hapi.js](https://hapijs.com/)
+ 
+ 2. [JWT (Json Web Tokens)](https://jwt.io/)
  
