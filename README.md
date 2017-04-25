@@ -2,12 +2,12 @@
 
 Exercises for personal study of Nodejs, frameworks and related topics
 
-## Getting Started
+## 🌄 Getting Started
 
 - Install Nodejs v6.x.x
 - Npm or Yarn
 
-## Description of folders
+## 🌅 Description of folders
 
 - 🚲  __hapi-basic-example:__ Hapi.js
 - 🚕  __crud-example-1:__ Hapi.js Basic Restful Services
@@ -16,14 +16,14 @@ Exercises for personal study of Nodejs, frameworks and related topics
 - 🚚  __crud-example-4:__ Hapi.js Basic Restful Services, JWT authentication, Bcrypt, Middleware (server.ext), and Authorization (validate roles). 
  
 
-## In each folder, run:
+## 🌇 In each folder, run:
 
 - `npm install` or `yarn install`
 
 - `npm start` or `yarn start`
 
 
-## Learning
+## 🌃 Learning
 
  1. [Hapi.js](https://hapijs.com/)
 
