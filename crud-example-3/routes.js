@@ -16,7 +16,7 @@ var users = [
 exports.init = function (server) {
   
   // bring your own validation function
-  let validate = function (request, decoded, callback) {
+  let validate = function (decoded, request, callback) {
       let error,
           credentials = users.filter(u => { if(u.id == decoded.userId) return u }) || {};
 
