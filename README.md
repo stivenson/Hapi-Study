@@ -13,7 +13,7 @@ Exercises for personal study of Nodejs, frameworks and related topics
 - 🚕  __crud-example-1:__ Hapi.js Basic Restful Services
 - 🚜  __crud-example-2:__ Hapi.js Basic Restful Services and JWT authentication
 - 🚛  __crud-example-3:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
-- 🚚  __crud-example-4:__ Hapi.js Basic Restful Services, JWT authentication, Bcrypt, Middleware (server.ext), and Authorization (validate roles). 
+- 🚚  __crud-example-4:__ Hapi.js Basic Restful, JWT, Bcrypt, Middleware (server.ext), and Authorization (validate roles). 
  
 
 ## 🌇 In each folder, run:
