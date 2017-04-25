@@ -1,4 +1,4 @@
-# Nodejs-Study 📑 📑
+# Nodejs-Study [Hapi](https://hapijs.com/) 📑
 
 Exercises for personal study of Nodejs, frameworks and related topics
 
