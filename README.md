@@ -3,7 +3,7 @@
 Exercises for personal study of Nodejs, frameworks and related topics
 
 ## Description of folders
-- :Bicycle: __hapi-basic-example:__ Hapi.js
+- <span style="font-size:30px;">🚲</span>  __hapi-basic-example:__ Hapi.js
 - __crud-example-1:__ Hapi.js Basic Restful Services
 - __crud-example-2:__ Hapi.js Basic Restful Services and JWT authentication
  
