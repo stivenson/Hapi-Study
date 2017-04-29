@@ -1,10 +1,8 @@
 # Nodejs-Study
 
-![npm](https://img.shields.io/npm/v/Nodejs-Study.svg) ![license](https://img.shields.io/npm/l/Nodejs-Study.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg)  ![Circle CI build status](https://circleci.com/gh/stivenson/Nodejs-Study.svg?style=svg)
+![npm](https://img.shields.io/npm/v/Nodejs-Study.svg) ![license](https://img.shields.io/npm/l/Nodejs-Study.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg) 
 
 Exercises for personal study of Nodejs, frameworks and related topics
-
-![nodei.co](https://nodei.co/npm/Nodejs-Study.png?downloads=true&downloadRank=true&stars=true)
 
 ![travis-status](https://img.shields.io/travis/stivenson/Nodejs-Study.svg)
 ![stars](https://img.shields.io/github/stars/stivenson/Nodejs-Study.svg)
