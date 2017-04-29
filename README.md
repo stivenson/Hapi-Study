@@ -29,3 +29,6 @@ Exercises for personal study of Nodejs, frameworks and related topics
 
  2. [JWT (Json Web Tokens)](https://jwt.io/)
  
+ 3. [hapi-auth-jwt2](https://www.npmjs.com/package/hapi-auth-jwt2)
+
+ 4. [hapi-authorization](https://www.npmjs.com/package/hapi-authorization)
