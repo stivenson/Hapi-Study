@@ -13,8 +13,8 @@ Exercises for personal study of Nodejs, frameworks and related topics
 - 🚕  __crud-example-1:__ Hapi.js Basic Restful Services
 - 🚜  __crud-example-2:__ Hapi.js Basic Restful Services and JWT authentication
 - 🚛  __crud-example-3:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
-- 🚚  __crud-example-4:__ Hapi.js Basic Restful, JWT, Bcrypt, Middleware (server.ext), and Authorization (validate roles). 
-- 🚙  __crud-example-class-es6__ Hapi, Resful, JWT, Bcrypt, Middle., ES6 Classes, Modular structure.  
+- 🚚  __crud-example-4:__ Hapi.js Basic Restful, JWT, Bcrypt, Middle., and Authorization (roles). 
+- 🚙  __crud-example-class-es6:__ Hapi, Resful, JWT, Bcrypt, Middle., ES6 Classes, Modular structure. 🌠   
 
 ## 🌇 In each folder, run:
 
