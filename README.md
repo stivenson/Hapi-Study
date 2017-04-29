@@ -1,8 +1,8 @@
-# crud-example-class-es6
+# Nodejs-Study ( [Hapi](https://hapijs.com/) ) 📑
+Exercises for personal study of Nodejs, frameworks and related topics
 
-![npm](https://img.shields.io/npm/v/crud-example-class-es6.svg) ![license](https://img.shields.io/npm/l/crud-example-class-es6.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg)  ![Circle CI build status](https://circleci.com/gh/stivenson/Nodejs-Study.svg?style=svg)
 
-crud example with classes ES6
+![npm](https://img.shields.io/npm/v/crud-example-class-es6.svg) ![license](https://img.shields.io/npm/l/crud-example-class-es6.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg)  
 
 ![nodei.co](https://nodei.co/npm/crud-example-class-es6.png?downloads=true&downloadRank=true&stars=true)
 
@@ -12,20 +12,41 @@ crud example with classes ES6
 
 ![forks](https://img.shields.io/github/forks/stivenson/Nodejs-Study.svg)
 
-![](https://david-dm.org/stivenson/Nodejs-Study/status.svg)
-![](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
-
-## Features
+![status](https://david-dm.org/stivenson/Nodejs-Study/status.svg)
+![dev-status](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
 
 
-## Install
+## 🌄 Getting Started
 
-`npm install --save crud-example-class-es6`
+- Install [Nodejs v6.x.x](https://nodejs.org/en/)
+- Install [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/lang/en/)
+
+## 🌅 Description of folders
+
+- 🚲  __hapi-basic-example:__ Hapi.js
+- 🚕  __crud-example-1:__ Hapi.js Basic Restful Services
+- 🚜  __crud-example-2:__ Hapi.js Basic Restful Services and JWT authentication
+- 🚛  __crud-example-3:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
+- 🚚  __crud-example-4:__ Hapi.js Basic Restful, JWT, Bcrypt, Middle., and Authorization (roles). 
+- 🚙  __crud-example-class-es6:__ Hapi, Restful, JWT, Bcrypt, Middle., __ES6 Classes__, __Modular structure__. 🌠   
+
+## 🌇 In each folder, run:
+
+- `npm install` or `yarn install`
+
+- `npm start` or `yarn start`
 
 
-## Scripts
+## 🌃 Learning
 
- - **npm run readme** : `node ./node_modules/.bin/node-readme`
+ 1. [Hapi.js](https://hapijs.com/)
+
+ 2. [JWT (Json Web Tokens)](https://jwt.io/)
+ 
+ 3. [hapi-auth-jwt2](https://www.npmjs.com/package/hapi-auth-jwt2)
+
+ 4. [hapi-authorization](https://www.npmjs.com/package/hapi-authorization)
+
 
 ## Dependencies
 
