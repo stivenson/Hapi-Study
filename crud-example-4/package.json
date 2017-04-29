@@ -1,7 +1,7 @@
 {
-  "name": "crud-example-2",
+  "name": "crud-example-4",
   "version": "1.0.0",
-  "description": "crud example with JWT",
+  "description": "crud example",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
