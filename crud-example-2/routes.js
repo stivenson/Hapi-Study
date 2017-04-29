@@ -7,7 +7,7 @@ var users = [
       surnames: 'Rincon',
       number_identification: 1234,
       email: 'stivenson.rpm@gmail.com',
-      password: '123456'
+      password: '123456' // pending encrypt password
   }
 ]
 
@@ -16,8 +16,8 @@ exports.init = function (server) {
   // bring your own validation function
   let validate = function (request, decoded, callback) {
       let error,
-          credentials = users[decoded.userId] || {};
-   
+          credentials = users.filter(u => { if(u.id == decoded.userId) return u }) || {};
+
       if (!credentials) {
           return callback(error, false, credentials);
       }
@@ -39,7 +39,7 @@ exports.init = function (server) {
 
     server.auth.default('jwt');
 
-    // pending return token jwt
+    // Send token of user with email y password obtained for post
     server.route({
       method: 'POST',
       path: '/login',
@@ -47,13 +47,19 @@ exports.init = function (server) {
       handler: function (request, reply) {
 
         // find user in array
-        let user = users.filter(u => {if(u.email === request.payload.email && u.password == request.payload.password) return u}); // pending encrypt password
-        delete user.password;
+        let arruser = users.filter(u => {if(u.email === request.payload.email && u.password == request.payload.password) return u}); 
+        let user = arruser[0] || {};
+        let token;
+        if(user.password) delete user.password;
+        if(user.id != undefined)
+          token = jwt.sign({ userId: user.id }, privateKey, { algorithm: 'HS256'});
+        else
+          token = false;
 
         reply({
           statusCode: 0,
           item: user,
-          token: jwt.sign({ userId: user.id }, privateKey, { algorithm: 'HS256'})
+          token: token
         })
       }
     })
