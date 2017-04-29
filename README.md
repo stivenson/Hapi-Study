@@ -1,10 +1,10 @@
-# Nodejs-Study ( [Hapi](https://hapijs.com/) ) 📑
+# Nodejs-Study
+
+![npm](https://img.shields.io/npm/v/Nodejs-Study.svg) ![license](https://img.shields.io/npm/l/Nodejs-Study.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg)  ![Circle CI build status](https://circleci.com/gh/stivenson/Nodejs-Study.svg?style=svg)
+
 Exercises for personal study of Nodejs, frameworks and related topics
 
-
-![npm](https://img.shields.io/npm/v/crud-example-class-es6.svg) ![license](https://img.shields.io/npm/l/crud-example-class-es6.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg)  
-
-![nodei.co](https://nodei.co/npm/crud-example-class-es6.png?downloads=true&downloadRank=true&stars=true)
+![nodei.co](https://nodei.co/npm/Nodejs-Study.png?downloads=true&downloadRank=true&stars=true)
 
 ![travis-status](https://img.shields.io/travis/stivenson/Nodejs-Study.svg)
 ![stars](https://img.shields.io/github/stars/stivenson/Nodejs-Study.svg)
@@ -12,8 +12,8 @@ Exercises for personal study of Nodejs, frameworks and related topics
 
 ![forks](https://img.shields.io/github/forks/stivenson/Nodejs-Study.svg)
 
-![status](https://david-dm.org/stivenson/Nodejs-Study/status.svg)
-![dev-status](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
+![](https://david-dm.org/stivenson/Nodejs-Study/status.svg)
+![](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
 
 
 ## 🌄 Getting Started
@@ -47,6 +47,13 @@ Exercises for personal study of Nodejs, frameworks and related topics
 
  4. [hapi-authorization](https://www.npmjs.com/package/hapi-authorization)
 
+
+## Scripts
+
+ - **npm run start** : `node app.js`
+ - **npm run test** : `NODE_ENV='test' ./node_modules/lab/bin/lab -c`
+ - **npm run startpro** : `NODE_ENV=pro node app.js`
+ - **npm run readme** : `node ./node_modules/.bin/node-readme`
 
 ## Dependencies
 
