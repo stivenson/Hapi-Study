@@ -22,7 +22,7 @@ var plugins = [
     {
         register: require('hapi-authorization'),
         options: {
-          roles: ['OWNER', 'MANAGER', 'EMPLOYEE']  // By setting to false, you are not using an authorization hierarchy and you do not need to specify all the potential roles here 
+          roles: ['ADMIN', 'MANAGER', 'EMPLOYEE']  // By setting to false, you are not using an authorization hierarchy and you do not need to specify all the potential roles here 
         }
     }
 ];
@@ -114,7 +114,7 @@ exports.init = function (server) {
     server.route({
       method: 'GET',
       path: '/users',
-      config: { auth: 'jwt' },
+      config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'MANAGER'}} },
       handler: function (request, reply) {
         reply({
           statusCode: 0,
@@ -127,6 +127,7 @@ exports.init = function (server) {
     server.route({
       method: 'GET',
       path: '/users/{id}',
+      config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} },
       handler: function (request, reply) {
         reply({
           statusCode: 0,
