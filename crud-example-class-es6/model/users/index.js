@@ -39,7 +39,8 @@ class Users extends Resources {
 	}
 
 	detail(id){
-
+		let usersF = dataUsers.filter(u => { if(u.id == id) return u });
+		return usersF.length < 1 ? false : new User(usersF[0]);
 	}
 
 	update(){
