@@ -1,7 +1,7 @@
 exports.init = function (server) {
   server.route({
     method: 'GET',
-    path: 'users',
+    path: '/users',
     handler: function (request, reply) {
       reply({
         statusCode: 0,
@@ -23,7 +23,7 @@ exports.init = function (server) {
 
   server.route({
     method: 'POST',
-    path: '/welcome',
+    path: '/users',
     handler: function (request, reply) {
       reply({
         statusCode: 0,
