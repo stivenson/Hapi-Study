@@ -1,17 +1,8 @@
 # Nodejs-Study
 
-![npm](https://img.shields.io/npm/v/Nodejs-Study.svg) ![license](https://img.shields.io/npm/l/Nodejs-Study.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg) 
+![license](https://img.shields.io/npm/l/Nodejs-Study.svg) ![github-issues](https://img.shields.io/github/issues/stivenson/Nodejs-Study.svg) ![stars](https://img.shields.io/github/stars/stivenson/Nodejs-Study.svg) ![forks](https://img.shields.io/github/forks/stivenson/Nodejs-Study.svg) ![](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
 
 Exercises for personal study of Nodejs, frameworks and related topics
-
-![travis-status](https://img.shields.io/travis/stivenson/Nodejs-Study.svg)
-![stars](https://img.shields.io/github/stars/stivenson/Nodejs-Study.svg)
-![forks](https://img.shields.io/github/forks/stivenson/Nodejs-Study.svg)
-
-![forks](https://img.shields.io/github/forks/stivenson/Nodejs-Study.svg)
-
-![](https://david-dm.org/stivenson/Nodejs-Study/status.svg)
-![](https://david-dm.org/stivenson/Nodejs-Study/dev-status.svg)
 
 
 ## 🌄 Getting Started
