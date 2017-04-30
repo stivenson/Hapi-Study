@@ -52,8 +52,19 @@ class Users extends Resources {
         }
     }
 
-    update(){
-
+    update(id,props){
+        try{
+            let index = dataUsers.findIndex(u => u.id == id);
+            dataUsers[index].names = props.names;
+            dataUsers[index].surnames = props.surnames;
+            dataUsers[index].number_identification = props.number_identification;
+            dataUsers[index].role = props.role;
+            dataUsers[index].email = props.email;
+            dataUsers[index].password = props.password;
+            return dataUsers[index];
+        }catch(err){
+            return false;
+        }
     }
 
     delete(){
