@@ -6,14 +6,14 @@ const GeneralConfig = require('../../config');
 
 class Users extends Resources {
 
-	constructor() {
-		super();
-		this._list = [];
-		for(let user of dataUsers)
-			this._list.push(new User(user));
-	}
+    constructor() {
+        super();
+        this._list = [];
+        for(let user of dataUsers)
+            this._list.push(new User(user));
+    }
 
-	login(email,password){
+    login(email,password){
         // find user in array
         let arruser = dataUsers.filter(u => {
           let hash = User.hasfOfPassword(password);
@@ -26,39 +26,39 @@ class Users extends Resources {
           token = jwt.sign({ userId: user.id }, GeneralConfig.privateKey, { algorithm: 'HS256'});
         else
           token = false;
-      	return { user: user, token: token};
-	}
+          return { user: user, token: token};
+    }
 
-	list(){
-		return this._list;
-	}
+    list(){
+        return this._list;
+    }
 
 
-	validate(userId){
-		return dataUsers.filter(u => { if(u.id == userId) return u });
-	}
+    validate(userId){
+        return dataUsers.filter(u => { if(u.id == userId) return u });
+    }
 
-	detail(id){
-		let usersF = dataUsers.filter(u => { if(u.id == id) return u });
-		return usersF.length < 1 ? false : new User(usersF[0]);
-	}
+    detail(id){
+        let usersF = dataUsers.filter(u => { if(u.id == id) return u });
+        return usersF.length < 1 ? false : new User(usersF[0]);
+    }
 
-	save(props){
-		try{
-			dataUsers.push(new User(props));
-			return dataUsers[dataUsers.length - 1];
-		}catch(err){
-			return false;
-		}
-	}
+    save(props){
+        try{
+            dataUsers.push(new User(props));
+            return dataUsers[dataUsers.length - 1];
+        }catch(err){
+            return false;
+        }
+    }
 
-	update(){
+    update(){
 
-	}
+    }
 
-	delete(){
+    delete(){
 
-	}
+    }
 
 }
 
