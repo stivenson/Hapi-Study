@@ -43,11 +43,16 @@ class Users extends Resources {
 		return usersF.length < 1 ? false : new User(usersF[0]);
 	}
 
-	update(){
-
+	save(props){
+		try{
+			dataUsers.push(new User(props));
+			return dataUsers[dataUsers.length - 1];
+		}catch(err){
+			return false;
+		}
 	}
 
-	save(){
+	update(){
 
 	}
 

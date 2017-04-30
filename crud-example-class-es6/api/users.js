@@ -99,9 +99,10 @@ exports.init = function (server) {
       path: '/users',
       config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} },
       handler: function (request, reply) {
+        let users = new Users();
         reply({
           statusCode: 0,
-          item: {'names': request.payload.names,'surnames':request.payload.surnames,'number_identification':request.payload.number_identification}
+          item: users.save(request.payload)
         })
         .header("Authorization", request.headers.authorization)
       }
