@@ -1,8 +1,8 @@
 class Resources {
 
-	constructor() {
-		
-	}
+    constructor() {
+        
+    }
 
 }
 
