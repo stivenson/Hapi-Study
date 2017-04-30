@@ -67,8 +67,14 @@ class Users extends Resources {
         }
     }
 
-    delete(){
-
+    delete(id){
+        try{
+            let index = dataUsers.findIndex(u => u.id == id);
+            delete dataUsers[index];
+            return dataUsers;
+        }catch(err){
+            return false;
+        }
     }
 
 }

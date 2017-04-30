@@ -11,7 +11,6 @@ exports.init = function (server) {
   // bring your own validation function
   let validate = function (decoded, request, callback) {
 
-      let users = new Users();
       let error,
           credentials = users.validate(decoded.userId);
 
@@ -71,7 +70,6 @@ exports.init = function (server) {
       path: '/users',
       config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} }, // Too is possible multiple ['MANAGER',ADMIN]
       handler: function (request, reply) {
-        let users = new Users();
         reply({
           statusCode: 0,
           list: users.list()
@@ -85,7 +83,6 @@ exports.init = function (server) {
       path: '/users/{id}',
       config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} },
       handler: function (request, reply) {
-        let users = new Users();
         reply({
           statusCode: 0,
           item: users.detail(request.params.id)
@@ -99,7 +96,6 @@ exports.init = function (server) {
       path: '/users',
       config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} },
       handler: function (request, reply) {
-        let users = new Users();
         reply({
           statusCode: 0,
           item: users.save(request.payload)
@@ -113,7 +109,6 @@ exports.init = function (server) {
       path: '/users/{id}',
       config: { auth: 'jwt', plugins: {'hapiAuthorization': {role: 'ADMIN'}} },
       handler: function (request, reply) {
-        let users = new Users();
         reply({
           statusCode: 0,
           item: users.update(request.params.id,request.payload)
@@ -129,7 +124,7 @@ exports.init = function (server) {
       handler: function (request, reply) {
         reply({
           statusCode: 0,
-          item: {'id': request.params.id}
+          item: users.delete(request.params.id)
         })
         .header("Authorization", request.headers.authorization)
       }
