@@ -1,4 +1,4 @@
-const ApiConfig = require('./config') 
+const ApiConfig = require('./config'); 
 const GeneralConfig = require('../config');
 const Users = require('../model/users').default;
 
@@ -129,6 +129,19 @@ exports.init = function (server) {
         .header("Authorization", request.headers.authorization)
       }
     })
+
+
+    server.route({
+      method: 'GET',
+      path: '/testConnectTableUser',
+      handler: function (request, reply) {
+        reply({
+          statusCode: 0,
+          list: Users.testConnectTableUser(server.plugins['hapi-mysql'])
+        })
+      }
+    })
+
 
   });
 

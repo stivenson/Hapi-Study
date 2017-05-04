@@ -3,6 +3,7 @@ const User = require('./user').default;
 let dataUsers = require('../../data/users'); // Simulate data of database
 const jwt = require('jsonwebtoken');
 const GeneralConfig = require('../../config');
+const ApiConfig = require('../../api/config'); 
 
 class Users extends Resources {
 
@@ -75,6 +76,24 @@ class Users extends Resources {
         }catch(err){
             return false;
         }
+    }
+
+    static testConnectTableUser(plugin){
+
+        plugin.pool.getConnection(function(err, connection) {
+            // Use the connection
+            console.log(err);
+            connection.query(
+                'SELECT DATABASE();',
+                function(err, rows) {
+                    if(err)
+                        throw new Error(err)
+                }
+            )
+
+            // And done with the connection.
+            return connection.release();
+        });
     }
 
 }
