@@ -7,7 +7,7 @@ Exercises for personal study of Nodejs, frameworks and related topics
 
 ## 🌄 Getting Started
 
-- Install [Nodejs v6.x.x](https://nodejs.org/en/)
+- Install [Nodejs v7.9.x](https://nodejs.org/en/) or higher
 - Install [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/lang/en/)
 
 ## 🌅 Description of folders

@@ -6,7 +6,10 @@ var Config = {
         {
             register: require('hapi-mysql'),
             options: {
-              host: 'localhost'
+              host: 'localhost',
+              database: 'hapimysql',
+              user: 'root',
+              password: 'root'
             }
         },
         {

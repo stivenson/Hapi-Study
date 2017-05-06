@@ -78,22 +78,27 @@ class Users extends Resources {
         }
     }
 
-    static testConnectTableUser(plugin){
-
-        plugin.pool.getConnection(function(err, connection) {
-            // Use the connection
-            console.log(err);
-            connection.query(
-                'SELECT DATABASE();',
-                function(err, rows) {
-                    if(err)
-                        throw new Error(err)
-                }
-            )
-
-            // And done with the connection.
-            return connection.release();
-        });
+    static async testConnectTableUser(plugin){
+        let res = false;
+ 
+            await plugin.pool.getConnection(function(err, connection) {
+                (async () => { 
+                    await connection.query(
+                        'SELECT * from users',
+                        function(err, rows) {
+                            if(err)
+                                throw new Error(err)
+                            console.log(rows);
+                            res = rows;
+                        }
+                    )
+                    // And done with the connection.
+                    connection.release();
+                    console.log('release DB connection');
+                })();
+            });
+        console.log('end sync connection');
+        return res;
     }
 
 }
