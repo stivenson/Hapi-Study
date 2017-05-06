@@ -13,11 +13,13 @@ Exercises for personal study of Nodejs, frameworks and related topics
 ## 🌅 Description of folders
 
 - 🚲  __hapi-basic-example:__ Hapi.js
-- 🚕  __crud-example-1:__ Hapi.js Basic Restful Services
-- 🚜  __crud-example-2:__ Hapi.js Basic Restful Services and JWT authentication
-- 🚛  __crud-example-3:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
-- 🚚  __crud-example-4:__ Hapi.js Basic Restful, JWT, Bcrypt, Middle., and Authorization (roles). 
-- 🚙  __crud-example-class-es6:__ Hapi, Restful, JWT, Bcrypt, Middle., __ES6 Classes__, __Modular structure__. 🌠   
+- 🚴  __hapi-rest-services:__ Hapi.js Basic Restful Services
+- 🚕  __hapi-rest-services-jwt:__ Hapi.js Basic Restful Services and JWT authentication
+- 🚜  __hapi-rest-services-jwt-bcrypt:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
+- 🚛  __hapi-rest-services-jwt-bcrypt-Middle:__ Hapi.js Basic Restf., JWT, Bcrypt, Middle., and Authorization (roles). 
+- 🚚  __hapi-rest-class-es6:__ Hapi, Restful, JWT, Bcrypt, Middle. Autho., __ES6 Classes__. 🌠   
+- 🚙  __hapi-rest-mysql:__ Hapi, Restful, JWT, Bcrypt, Middle. Autho., __ES6 Classes__, __Mysql__. 🌠   
+
 
 ## 🌇 In each folder, run:
 

@@ -1,7 +1,7 @@
 {
-  "name": "crud-example-2",
+  "name": "hapi-rest-class-es6",
   "version": "1.0.0",
-  "description": "crud example",
+  "description": "crud example with classes ES6",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -14,9 +14,11 @@
   "author": "Stivenson Rincon",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "code": "^4.0.0",
     "hapi": "^16.1.0",
     "hapi-auth-jwt2": "^7.2.4",
+    "hapi-authorization": "^3.0.2",
     "jsonwebtoken": "^7.3.0",
     "lab": "^12.1.0"
   }

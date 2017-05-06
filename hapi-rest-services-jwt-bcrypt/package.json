@@ -1,12 +1,12 @@
 {
-  "name": "crud-example-1",
+  "name": "hapi-rest-services-jwt-bcrypt",
   "version": "1.0.0",
   "description": "crud example",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "NODE_ENV='test' ./node_modules/lab/bin/lab -c",
-    "startpro":"NODE_ENV=pro node app.js"
+    "startpro": "NODE_ENV=pro node app.js"
   },
   "keywords": [
     "hapi"
@@ -14,8 +14,11 @@
   "author": "Stivenson Rincon",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "code": "^4.0.0",
     "hapi": "^16.1.0",
+    "hapi-auth-jwt2": "^7.2.4",
+    "jsonwebtoken": "^7.3.0",
     "lab": "^12.1.0"
   }
 }

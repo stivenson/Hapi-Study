@@ -1,5 +1,5 @@
 {
-  "name": "crud-example-3",
+  "name": "hapi-rest-services-jwt",
   "version": "1.0.0",
   "description": "crud example",
   "main": "app.js",
@@ -14,7 +14,6 @@
   "author": "Stivenson Rincon",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^1.0.2",
     "code": "^4.0.0",
     "hapi": "^16.1.0",
     "hapi-auth-jwt2": "^7.2.4",

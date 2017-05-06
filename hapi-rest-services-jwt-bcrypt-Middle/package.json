@@ -1,7 +1,7 @@
 {
-  "name": "crud-example-mysql",
+  "name": "hapi-rest-services-jwt-bcrypt-Middle",
   "version": "1.0.0",
-  "description": "crud example with integration to mysql",
+  "description": "crud example",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -19,7 +19,6 @@
     "hapi": "^16.1.0",
     "hapi-auth-jwt2": "^7.2.4",
     "hapi-authorization": "^3.0.2",
-    "hapi-mysql": "^1.0.15",
     "jsonwebtoken": "^7.3.0",
     "lab": "^12.1.0"
   }

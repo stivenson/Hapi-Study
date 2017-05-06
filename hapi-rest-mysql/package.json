@@ -1,7 +1,7 @@
 {
-  "name": "crud-example-class-es6",
+  "name": "hapi-rest-mysql",
   "version": "1.0.0",
-  "description": "crud example with classes ES6",
+  "description": "crud example with integration to mysql",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -19,6 +19,7 @@
     "hapi": "^16.1.0",
     "hapi-auth-jwt2": "^7.2.4",
     "hapi-authorization": "^3.0.2",
+    "hapi-mysql": "^1.0.15",
     "jsonwebtoken": "^7.3.0",
     "lab": "^12.1.0"
   }
