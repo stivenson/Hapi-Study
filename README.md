@@ -59,6 +59,36 @@ Package | Version | Dev
 [lab](https://www.npmjs.com/package/lab) | ^12.1.0 | ✖
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 
+## Additional for hapi-rest-mysql project:
+
+ 1. Install mysql version 5.6.x and create a database called hapimysql.
+
+ 2. After, run the following sql into hapimysql database:
+
+```mysql
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `names` varchar(100) NOT NULL,
+  `surnames` varchar(100) NOT NULL,
+  `number_identification` varchar(25) NOT NULL,
+  `role` varchar(30) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+```
+
 
 ## Contributing
 
