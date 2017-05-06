@@ -18,7 +18,7 @@ Exercises for personal study of Nodejs, frameworks and related topics
 - 🚜  __hapi-rest-services-jwt-bcrypt:__ Hapi.js Basic Restful Services, JWT authentication and Bcrypt
 - 🚛  __hapi-rest-services-jwt-bcrypt-Middle:__ Hapi.js Basic Restf., JWT, Bcrypt, Middle., and Authorization (roles). 
 - 🚚  __hapi-rest-class-es6:__ Hapi, Restful, JWT, Bcrypt, Middle. Autho., __ES6 Classes__. 🌠   
-- 🚙  __hapi-rest-mysql__ (__function testConnectTableUser__): Hapi, Restful, JWT, Bcrypt, Middle. Autho., __ES6 Classes__, __Mysql__. 🌠   
+- 🚙  __hapi-rest-mysql__ (__See function testConnectTableUser__): Hapi, Restful, JWT, Bcrypt, Middle. Autho., __ES6 Classes__, __Mysql__. 🌠   
 
 
 ## 🌇 In each folder, run:
