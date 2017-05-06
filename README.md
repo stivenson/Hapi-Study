@@ -32,7 +32,10 @@ Exercises for personal study of Nodejs, frameworks and related topics
 
  1. Install mysql version 5.6.x and create a database called hapimysql.
 
- 2. After, run the following sql into hapimysql database:
+ 2. Change connection data to mysql in /hapi-rest-mysql/api/config.js with your connection data.
+
+ 3. After, run the following sql into hapimysql database:
+
 
 ```mysql
 
