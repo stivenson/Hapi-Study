@@ -77,6 +77,28 @@ class Users extends Resources {
         }
     }
 
+
+    static async testDocumentMongo(plugin){
+        let res = false;
+
+        let db = plugin.db;
+        let ObjectID = plugin.ObjectID;
+        let id = 1;
+
+        await db.collection('users').findOne({  _id: new ObjectID(id) }, function (err, result) {
+
+            if (err) 
+                res = Boom.internal('Internal MongoDB error', err)
+
+            res = result;
+        });
+
+        return res;
+    } 
+ 
+
+
+
 }
 
 exports.default = Users;

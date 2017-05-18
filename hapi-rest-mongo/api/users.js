@@ -130,6 +130,17 @@ exports.init = function (server) {
       }
     })
 
+    server.route({
+      method: 'GET',
+      path: '/testDocumentMongo',
+      handler: function (request, reply) {
+        reply({
+          statusCode: 0,
+          list: Users.testDocumentMongo(server.plugins['hapi-mongodb'])
+        })
+      }
+    })
+
   });
 
 }
