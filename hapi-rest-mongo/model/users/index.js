@@ -85,7 +85,7 @@ class Users extends Resources {
         let ObjectID = plugin.ObjectID;
         let id = 1;
 
-        await db.collection('users').findOne({  _id: new ObjectID(id) }, function (err, result) {
+        await db.collection('users').insert({name: "Pepito", surname: "Perez", age: 27}, function (err, result) {
 
             if (err) 
                 res = Boom.internal('Internal MongoDB error', err)

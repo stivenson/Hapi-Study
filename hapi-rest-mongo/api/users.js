@@ -22,17 +22,6 @@ exports.init = function (server) {
 
   };
 
-  server.ext('onRequest', function (request, reply) {
-      // Check header example 
-      if(request.headers.example){
-        reply.continue();
-      }
-      reply({
-          statusCode: 500,
-          message: "No found header called example"
-      });
-  });
-
   server.register(ApiConfig.plugins, function (err) {
 
     if(err){

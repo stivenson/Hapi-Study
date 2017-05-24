@@ -6,7 +6,7 @@ var Config = {
         {
             register: require('hapi-mongodb'),
             options: {
-                url: 'mongodb://localhost:27017/test',
+                url: 'mongodb://localhost:27017/admin',
                 settings: {
                     poolSize: 10
                 },
